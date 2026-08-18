@@ -66,6 +66,21 @@ html[data-theme="dark"] .breakdown-dark-overlay{display:block;position:absolute;
 html[data-theme="dark"] .guide-outline{border-color:rgba(255,255,255,.72)}
 html[data-theme="dark"] .safe-area-labels span{background:#fff;color:#050505}
 
+.original-website-button,
+html[data-theme="dark"] .original-website-button{
+  border-color:rgba(255,31,45,.75);
+  background:#ff1f2d;
+  color:#fff;
+  box-shadow:0 12px 28px rgba(255,31,45,.34),0 2px 8px rgba(0,0,0,.12);
+}
+
+.original-website-button:hover,
+html[data-theme="dark"] .original-website-button:hover{
+  background:#e60012;
+  color:#fff;
+  transform:translateY(-1px);
+}
+
 /* Center the social hero as one image-led composition. */
 .social-hero-stage{height:520px}
 .social-hero-copy{top:auto;bottom:26px;left:50%;width:min(calc(100% - 48px),520px);transform:translateX(-50%);text-align:center}

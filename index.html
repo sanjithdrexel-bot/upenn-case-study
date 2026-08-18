@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Penn Arts & Sciences website and social media redesign case study by Sanjith Kumar.">
+  <title>Penn Arts & Sciences Redesign — Sanjith Kumar</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%23990000%22/><text x=%2250%22 y=%2266%22 text-anchor=%22middle%22 font-size=%2252%22 font-family=%22Arial%22 fill=%22white%22>P</text></svg>">
+  <script>
+    (() => {
+      const choice = localStorage.getItem('penn-case-theme') || 'system';
+      const theme = choice === 'system' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : choice;
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.style.backgroundColor = theme === 'dark' ? '#151515' : '#fff';
+      document.documentElement.style.colorScheme = theme;
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="portfolio-back" href="../index.html?skipLoader=work#s3" aria-label="Back to portfolio work section"><span>←</span> Back to Portfolio</a>
+
+  <div class="utility-controls" aria-label="Page controls">
+    <a class="project-switch" href="social.html">Social re imagining <span>↗</span></a>
+    <button class="icon-button quick-theme" type="button" aria-label="Toggle dark mode"><span class="theme-icon">☾</span></button>
+  </div>
+
+
+  <main>
+    <header class="project-header copy-width section-stop" id="top">
+      <div>
+        <h1>Penn Arts &amp; Sciences</h1>
+        <p>Redesigning a clumsy digital experience into a clear student-first system</p>
+      </div>
+      <span class="status-chip"><i></i> Concept</span>
+    </header>
+
+    <figure class="hero-media hero-campus wide-width surface reveal">
+      <img src="assets/penn-campus.avif" alt="Penn campus">
+    </figure>
+
+    <section class="project-intro copy-width reveal">
+      <p>I redesigned Penn Arts &amp; Sciences’ website and social media presence as one connected experience. The website redesign makes academic information easier to find, while the social redesign replaces crowded, inconsistent posts with a clearer editorial system.</p>
+      <a class="small-button" href="https://www.sas.upenn.edu/" target="_blank" rel="noreferrer">Original website <span>↗</span></a>
+    </section>
+
+    <section class="metadata copy-width reveal" aria-label="Project details">
+      <div><p>Product</p><strong>Penn Arts &amp; Sciences</strong></div>
+      <div><p>My role</p><strong>UX/UI Designer</strong></div>
+      <div><p>Timeline</p><strong>2025</strong></div>
+      <div><p>Skills</p><strong>UX audit, Information architecture, Visual design, Responsive prototyping</strong></div>
+    </section>
+
+    <figure class="quote-media copy-width reveal">
+      <img src="assets/original-website.png" alt="Original Penn Arts and Sciences website">
+      <div class="scrim"></div>
+      <blockquote>“Penn’s content felt prestigious.<br>The experience did not feel easy.”</blockquote>
+    </figure>
+
+    <section class="text-section copy-width section-stop reveal" id="problem">
+      <h2>Problem: Strong content, weak hierarchy</h2>
+      <p>The current website contains valuable information, but navigation, institutional divisions, news and events compete at similar levels. It reflects how the organization is structured more than how a student searches for help.</p>
+      <p>The social media content had a similar problem. Individual posts used different type styles, layouts and image treatments, making the feed feel crowded and less polished than the institution it represents.</p>
+
+      <h3>Audit</h3>
+      <p>I reviewed the live homepage and existing social posts to identify where the experience became difficult to scan or visually inconsistent.</p>
+
+      <div class="insight-list">
+        <article><strong>No obvious starting point</strong><p>Visitors meet many equal-weight choices before understanding which path is relevant to them.</p></article>
+        <article><strong>Important actions feel secondary</strong><p>Small calls to action and dense supporting copy make the next step easy to miss.</p></article>
+        <article><strong>The digital brand feels fragmented</strong><p>The website and social feed do not share a consistent hierarchy, tone or visual rhythm.</p></article>
+      </div>
+    </section>
+
+    <section class="text-section copy-width section-stop reveal" id="solution">
+      <h2>Solution: One clearer digital system</h2>
+      <p>I kept Penn’s established navy and red, then rebuilt the experience around student needs. The website provides clearer entry points and the social system uses repeatable editorial layouts.</p>
+
+      <div class="solution-pills">
+        <div><span>⌖</span><strong>Student-first navigation</strong></div>
+        <div><span>▤</span><strong>Scannable content hierarchy</strong></div>
+        <div><span>◫</span><strong>Consistent social templates</strong></div>
+        <div><span>↗</span><strong>Stronger calls to action</strong></div>
+      </div>
+    </section>
+
+    <section class="feature copy-width reveal">
+      <div class="feature-heading"><span class="feature-icon">⌂</span><h3>Website: Designing around student needs.</h3></div>
+      <p>The redesigned landing page begins with one clear campus story, followed by three recognizable paths: curriculum, academic exploration, and advising. Students can understand the structure before they begin reading details.</p>
+      <p>Resources, events and college updates use consistent cards and section patterns, so the page remains useful without feeling like a directory.</p>
+    </section>
+
+    <section class="website-scroll-comparison wide-width reveal section-stop" id="website" aria-label="Full website before and after comparison">
+      <article class="website-scroll-column surface">
+        <div class="media-label"><span>Previous website</span><span>Scroll to explore</span></div>
+        <div class="website-scroll-viewport" tabindex="0" aria-label="Scrollable full original Penn Arts and Sciences website">
+          <img src="assets/original-website-complete.png" alt="Complete original Penn Arts and Sciences website from header through footer">
+        </div>
+      </article>
+      <article class="website-scroll-column surface redesign-column">
+        <div class="media-label"><span>My redesign</span><span class="media-actions"><em>Scroll to explore</em><a href="assets/figma/website-redesign-figma.pdf" target="_blank" rel="noreferrer">PDF ↗</a></span></div>
+        <div class="website-scroll-viewport" tabindex="0" aria-label="Scrollable full Penn Arts and Sciences website redesign">
+          <img src="assets/figma/website-redesign-figma.png" alt="Full Penn Arts and Sciences landing page redesign exported from Figma">
+        </div>
+      </article>
+    </section>
+
+    <section class="feature copy-width reveal">
+      <div class="feature-heading"><span class="feature-icon">⇄</span><h3>From organization-first to student-first.</h3></div>
+      <p>The original homepage foregrounds institutional categories. My version foregrounds the decisions students need to make: what to study, where to find support, and what is happening next.</p>
+    </section>
+
+    <section class="impact copy-width section-stop reveal" id="impact">
+      <h2>Impact: A clearer and more cohesive Penn</h2>
+      <p>This independent concept was not launched, so I do not claim measured performance results. The design outcome is a more understandable website, a more consistent social identity, and a system that better reflects Penn’s academic quality and student energy.</p>
+      <div class="impact-list">
+        <span>Clearer navigation</span><span>Stronger hierarchy</span><span>Consistent brand expression</span><span>More human storytelling</span>
+      </div>
+      <a class="small-button" href="#top">Back to top <span>↑</span></a>
+    </section>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
